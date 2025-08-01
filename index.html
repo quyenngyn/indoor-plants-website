@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indoor Plant Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="module" src="main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <p><a href="#plant-profiles">Plant Profiles</a></p>
+        <p><a href="#compare-plants">Compare Plant Care Levels</a></p>
+        <p><a href="#plant-recommendations">Personalised Plant Recs</a></p>
+        <p><a href="#how-to-guides">How-to Guides</a></p>
+        <p><a href="#watering-reminders">Watering Reminders</a></p>
+        <p><a href="#project-c">Growth Tracker</a></p>
+      </nav>
+
+      <h1 id="website-title">
+        Indoor Plant<br />
+        Care
+      </h1>
+    </header>
+
+    <main>
+      <!-- Plant Profiles section -->
+      <section id="plant-profiles">
+        <h2>Plant Profiles</h2>
+        <div class="plant-cards">
+          <!-- Monstera -->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.pexels.com/photos/5858235/pexels-photo-5858235.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Image of the Monstera"
+              width="300"
+              height="300"
+            />
+            <h4>Monstera</h4>
+            <h5><i>Monstera deliciosa</i></h5>
+            <ul>
+              <li>☀️ Bright, indirect light</li>
+              <li>💧 Water once a week</li>
+              <li>☁️ Moderate humidity</li>
+            </ul>
+          </div>
+
+          <!-- Fiddle Leaf Fig -->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.unsplash.com/photo-1643819131782-474a409da244?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Image of the Fiddle Leaf Fig"
+              width="300"
+              height="300"
+            />
+            <h4>Fiddle&nbsp;Leaf&nbsp;Fig</h4>
+            <h5><i>Ficus lyrata</i></h5>
+            <ul>
+              <li>☀️ Bright, indirect light</li>
+              <li>💧 Water once a week</li>
+              <li>☁️ Moderate humidity</li>
+            </ul>
+          </div>
+
+          <!-- Peace Lily -->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.pexels.com/photos/12531511/pexels-photo-12531511.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Image of the Peace Lily"
+              width="300"
+              height="300"
+            />
+            <h4>Peace&nbsp;Lily</h4>
+            <h5><i>Spathiphyllum</i></h5>
+            <ul>
+              <li>☀️ Low to medium light</li>
+              <li>💧 Keep soil moist</li>
+              <li>☁️ High humidity</li>
+            </ul>
+          </div>
+
+          <!-- Golden Pothos -->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.unsplash.com/photo-1595524147656-eb5d0a63e9a9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fHBvdGhvc3xlbnwwfHwwfHx8MA%3D%3D"
+              alt="Image of the Golden Pothos"
+              width="300"
+              height="300"
+            />
+            <h4>Golden&nbsp;Pothos</h4>
+            <h5><i>Epipremnum aureum</i></h5>
+            <ul>
+              <li>☀️ Low to bright light</li>
+              <li>💧 Water every 1-2 weeks</li>
+              <li>☁️ Moderate humidity</li>
+            </ul>
+          </div>
+
+          <!-- Heartleaf Philodendron -->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.unsplash.com/photo-1611211233623-1b1e2162633f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc1fHxwaGlsb2RlbmRyb24lMjBoZWFydGxlYWZ8ZW58MHx8MHx8fDA%3D"
+              alt="Image of the Heartleaf Philodendron"
+              width="300"
+              height="300"
+            />
+            <h4>Heartleaf&nbsp;Philodendron</h4>
+            <h5><i>Philodendron hederaceum</i></h5>
+            <ul>
+              <li>☀️ Medium to low light</li>
+              <li>💧 Water once a week</li>
+              <li>☁️ Moderate humidity</li>
+            </ul>
+          </div>
+
+          <!-- Thai Constellation -->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.pexels.com/photos/7193562/pexels-photo-7193562.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Image of the Thai Constellation"
+              width="300"
+              height="300"
+            />
+            <h4>Thai&nbsp;Constellation</h4>
+            <h5><i>Monstera adansonii</i></h5>
+            <ul>
+              <li>☀️ Bright, indirect light</li>
+              <li>💧 Water every 7 days</li>
+              <li>☁️ Moderate humidity</li>
+            </ul>
+          </div>
+
+          <!-- Anthurium Clarinervium-->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.pexels.com/photos/4953083/pexels-photo-4953083.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Image of the Anthurium Clarinervium"
+              width="300"
+              height="300"
+            />
+            <h4>Anthurium&nbsp;Clarinervium</h4>
+            <h5><i>Anthurium clarinervium</i></h5>
+            <ul>
+              <li>☀️ Bright, indirect light</li>
+              <li>💧 Water every week</li>
+              <li>☁️ High humidity</li>
+            </ul>
+          </div>
+
+          <!-- Raindrop Peperomia -->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.pexels.com/photos/27818968/pexels-photo-27818968/free-photo-of-peperomia-polybotrya.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Image of the Raindrop Peperomia"
+              width="300"
+              height="300"
+            />
+            <h4>Raindrop&nbsp;Peperomia</h4>
+            <h5><i>Peperomia polybotrya</i></h5>
+            <ul>
+              <li>☀️ Bright, indirect light</li>
+              <li>💧 Water every 7 days</li>
+              <li>☁️ Moderate humidity</li>
+            </ul>
+          </div>
+
+          <!-- Snake Plant -->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.unsplash.com/photo-1611211232932-da3113c5b960?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvdXNlcGxhbnR8ZW58MHx8MHx8fDA%3D"
+              alt="Image of the Snake Plant"
+              width="300"
+              height="300"
+            />
+            <h4>Snake&nbsp;Plant</h4>
+            <h5><i>Sansevieria trifasciata</i></h5>
+            <ul>
+              <li>☀️ Low to bright light</li>
+              <li>💧 Water every 2 weeks</li>
+              <li>☁️ Low humidity</li>
+            </ul>
+          </div>
+
+          <!-- String of Hearts -->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.unsplash.com/photo-1604396809760-940bda567881?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI0fHxpbmRvb3IlMjBwbGFudHxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Image of the String of Hearts"
+              width="300"
+              height="300"
+            />
+            <h4>String&nbsp;of&nbsp;Hearts</h4>
+            <h5><i>Ceropegia woodii</i></h5>
+            <ul>
+              <li>☀️ Bright, indirect light</li>
+              <li>💧 Water every 2 weeks</li>
+              <li>☁️ Low humidity</li>
+            </ul>
+          </div>
+
+          <!-- Satin Pothos -->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.unsplash.com/photo-1646355943389-259af793f21f?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Image of the Satin Pothos"
+              width="300"
+              height="300"
+            />
+            <h4>Satin&nbsp;Pothos</h4>
+            <h5><i>Scindapsus pictus</i></h5>
+            <ul>
+              <li>☀️ Bright, indirect light</li>
+              <li>💧 Water every 1-2 weeks</li>
+              <li>☁️ Moderate to high humidity</li>
+            </ul>
+          </div>
+
+          <!-- Dwarf Umbrella Tree -->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.pexels.com/photos/2624677/pexels-photo-2624677.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Image of the Dwarf Umbrella Tree"
+              width="300"
+              height="300"
+            />
+            <h4>Dwarf&nbsp;Umbrella&nbsp;Tree</h4>
+            <h5><i>Schefflera arboricola</i></h5>
+            <ul>
+              <li>☀️ Bright, indirect light</li>
+              <li>💧 Water once a week</li>
+              <li>☁️ Moderate humidity</li>
+            </ul>
+          </div>
+
+          <!-- Polka Dot Begonia -->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.pexels.com/photos/9387470/pexels-photo-9387470.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Image of the Polka Dot Begonia"
+              width="300"
+              height="300"
+            />
+            <h4>Polka&nbsp;Dot&nbsp;Begonia</h4>
+            <h5><i>Begonia maculata</i></h5>
+            <ul>
+              <li>☀️ Bright, indirect light</li>
+              <li>💧 Keep soil slightly moist</li>
+              <li>☁️ High humidity</li>
+            </ul>
+          </div>
+
+          <!-- Green Velvet Alocasia -->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.pexels.com/photos/27745130/pexels-photo-27745130/free-photo-of-a-large-green-plant-with-white-leaves.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Image of the Green Velvet Alocasia"
+              width="300"
+              height="300"
+            />
+            <h4>Green&nbsp;Velvet&nbsp;Alocasia</h4>
+            <h5><i>Alocasia micholitziana 'Frydek'</i></h5>
+            <ul>
+              <li>☀️ Medium to bright indirect light</li>
+              <li>💧 Water once a week</li>
+              <li>☁️ High humidity</li>
+            </ul>
+          </div>
+
+          <!-- Marble Queen Pothos -->
+          <div class="plant-card">
+            <img
+              class="plant-card-img"
+              src="https://images.unsplash.com/photo-1599224473702-3e955ef70efe?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fHBvdGhvc3xlbnwwfHwwfHx8MA%3D%3D"
+              alt="Image of the Marble Queen Pothos"
+              width="300"
+              height="300"
+            />
+            <h4>Marble&nbsp;Queen&nbsp;Pothos</h4>
+            <h5><i>Epipremnum aureum</i></h5>
+            <ul>
+              <li>☀️ Bright, indirect light</li>
+              <li>💧 Water every 1-2 weeks</li>
+              <li>☁️ Moderate humidity</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Compare Plants section -->
+      <section id="compare-plants">
+        <h2>Compare Plant Care Levels</h2>
+        <table>
+          <caption>
+            Find out which plant suits you based on care level and experience
+          </caption>
+          <thead>
+            <tr>
+              <th>Plant</th>
+              <th>Care Level</th>
+              <th>Suitable for Beginners?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monstera</td>
+              <td>Easy</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Fiddle Leaf Fig</td>
+              <td>Moderate</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Peace Lily</td>
+              <td>Easy</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Golden Pothos</td>
+              <td>Easy</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Heartleaf Philodendron</td>
+              <td>Easy</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Thai Constellation</td>
+              <td>Moderate</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Anthurium Clarinervium</td>
+              <td>Moderate</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Raindrop Peperomia</td>
+              <td>Easy</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Snake Plant</td>
+              <td>Easy</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>String of Hearts</td>
+              <td>Easy</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Satin Pothos</td>
+              <td>Moderate</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Dwarf Umbrella Tree</td>
+              <td>Moderate</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Polka Dot Begonia</td>
+              <td>Moderate</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Green Velvet Alocasia</td>
+              <td>Advanced</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Marble Queen Pothos</td>
+              <td>Easy</td>
+              <td>Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Plant Recs section -->
+      <section id="plant-recommendations">
+        <div class="video-background">
+          <video autoplay loop muted playsinline id="header-video">
+            <source src="wateringplants.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="overlay"></div>
+        </div>
+
+        <h2>Personalised Plant Recommendations</h2>
+
+        <form method="POST">
+          <label for="user-name">Your Name:</label>
+          <input
+            type="text"
+            id="user-name"
+            name="user-name"
+            placeholder="Enter your name"
+            minlength="2"
+            maxlength="50"
+            required
+          />
+          <label for="user-email">Your Email:</label>
+          <input
+            type="email"
+            id="user-email"
+            name="user-email"
+            placeholder="Enter your email"
+            pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+            required
+          />
+
+          <label for="number-of-plants"
+            >How many plants do you currently own?</label
+          >
+          <input
+            type="number"
+            id="number-of-plants"
+            name="number-of-plants"
+            min="0"
+            max="100"
+            value="0"
+            step="1"
+            required
+          />
+
+          <fieldset>
+            <legend>What is your preferred plant care difficulty level?</legend>
+            <label for="plant-difficulty"
+              >Choose or enter your desired care level:</label
+            >
+            <input
+              list="difficulty-levels"
+              id="plant-difficulty"
+              name="plant-difficulty"
+              required
+            />
+            <datalist id="difficulty-levels">
+              <option value="Easy"></option>
+              <option value="Moderate"></option>
+              <option value="Advanced"></option>
+            </datalist>
+          </fieldset>
+
+          <fieldset>
+            <legend>How much natural light do you have in your space?</legend>
+
+            <input
+              type="radio"
+              id="low-light"
+              name="light"
+              value="low"
+              required
+            />
+            <label for="low-light">Low Light</label><br />
+
+            <input type="radio" id="medium-light" name="light" value="medium" />
+            <label for="medium-light">Medium Light</label><br />
+
+            <input type="radio" id="bright-light" name="light" value="bright" />
+            <label for="bright-light">Bright Light</label>
+          </fieldset>
+
+          <label for="humidity">What is your room's humidity level?</label>
+          <select id="humidity" name="humidity" required>
+            <option value="" disabled selected>Select humidity level</option>
+            <option value="low">Low</option>
+            <option value="moderate">Moderate</option>
+            <option value="high">High</option>
+          </select>
+
+          <fieldset>
+            <legend>Which types of plants do you prefer?</legend>
+            <label for="favourite-plants"
+              >Select one or more plant types (optional):</label
+            >
+            <select
+              id="favourite-plants"
+              name="favourite-plants"
+              multiple
+              size="4"
+            >
+              <option value="foliage">Foliage Plants</option>
+              <option value="flowering">Flowering Plants</option>
+              <option value="succulents">Succulents</option>
+              <option value="vines">Vines</option>
+              <option value="cacti">Cacti</option>
+              <option value="ferns">Ferns</option>
+            </select>
+          </fieldset>
+
+          <div class="colour-container">
+            <label for="favourite-leaf-colour"
+              >What is your favourite leaf colour?</label
+            >
+            <input
+              type="color"
+              id="favourite-leaf-colour"
+              name="favourite-leaf-colour"
+              value="#385723"
+            />
+          </div>
+
+          <fieldset>
+            <legend>How often would you prefer to water your plants?</legend>
+
+            <input
+              type="radio"
+              id="weekly"
+              name="watering"
+              value="weekly"
+              required
+            />
+            <label for="weekly">Once a week</label><br />
+
+            <input
+              type="radio"
+              id="biweekly"
+              name="watering"
+              value="biweekly"
+            />
+            <label for="biweekly">Every 2 weeks</label><br />
+
+            <input type="radio" id="monthly" name="watering" value="monthly" />
+            <label for="monthly">Once a month</label><br />
+
+            <input type="radio" id="never" name="watering" value="never" />
+            <label for="never">Never</label>
+          </fieldset>
+
+          <label for="plant-care-time"
+            >How much time can you dedicate to plant care each week?
+            (hours)</label
+          >
+          <div class="range-container">
+            <input
+              type="range"
+              id="plant-care-time"
+              name="plant-care-time"
+              min="1"
+              max="20"
+              step="1"
+              value="5"
+              style="flex: 1"
+              oninput="timeOutput.value = this.value"
+            />
+            <output id="timeOutput">5</output> hours
+          </div>
+
+          <label for="pets"
+            >Do you have pets that might interact with your plants? (If no,
+            leave unchecked)</label
+          >
+          <input type="checkbox" id="pets" name="pets" value="yes" />
+
+          <br />
+
+          <label for="plant-purchase-date"
+            >When did you get your last plant?</label
+          >
+          <input
+            type="date"
+            id="plant-purchase-date"
+            name="plant-purchase-date"
+            min="1924-01-01"
+            max="2025-12-31"
+            value="2024-01-01"
+          />
+
+          <label for="care-notes"
+            >Any additional care notes or preferences?</label
+          >
+          <textarea
+            id="care-notes"
+            name="care-notes"
+            rows="4"
+            cols="50"
+            placeholder="Write any special care notes or preferences here"
+            minlength="10"
+            maxlength="300"
+          ></textarea>
+
+          <button type="submit">Get My Plant Recommendations</button>
+        </form>
+      </section>
+
+      <!-- How-to Guides section -->
+      <section id="how-to-guides">
+        <h2>How-to Guides</h2>
+
+        <article class="how-to-content">
+          <div id="propagation-guide">
+            <h3>How to Propagate a Pothos Plant</h3>
+            <p>Follow these simple steps to propagate a Pothos plant:</p>
+
+            <ol type="1">
+              <li>Choose a healthy vine with several leaves.</li>
+              <li>Identify a node (the small bump where roots grow).</li>
+              <li>Use clean scissors to cut the vine just below the node.</li>
+              <li>Remove the bottom leaves near the cutting.</li>
+              <li>
+                Place the cutting in a glass of water, ensuring the node is
+                submerged.
+              </li>
+              <li>Position the glass in bright, indirect light.</li>
+              <li>Change the water every 5-7 days to prevent stagnation.</li>
+              <li>After 2-4 weeks, roots should appear.</li>
+              <li>
+                Once the roots are a few inches long, transfer the cutting into
+                soil.
+              </li>
+              <li>Water the new plant and watch it grow.</li>
+            </ol>
+          </div>
+
+          <div class="video-container">
+            <h3>Plant Propagation for Beginners:</h3>
+
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Jh5oX0VRnzk?si=f8milY-bH2wjVjEG"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </article>
+      </section>
+
+      <!-- Indoor Plant Facts -->
+      <div class="split-section">
+        <aside id="plant-facts">
+          <div class="plant-facts-content">
+            <h3>Indoor Plant Facts</h3>
+            <p>
+              <b>Peace Lilies</b> are known for filtering common toxins like
+              benzene and formaldehyde from the air, improving indoor air
+              quality.
+            </p>
+
+            <p>
+              Indoor plants can help reduce stress and create a calming
+              atmosphere, making them great for workspaces and homes.
+            </p>
+
+            <p>
+              <b>Pothos</b> can thrive in water alone. Simply place cuttings in
+              a jar of water and they'll continue to grow with regular water
+              changes.
+            </p>
+
+            <p>
+              <b>Monstera deliciosa</b> has natural holes in its leaves, called
+              fenestrations, which help light pass through and improve air
+              circulation in rainforests.
+            </p>
+
+            <p>
+              <b>Snake Plants</b> are unique as they release oxygen during the
+              night, making them ideal for bedrooms and promoting better sleep
+              quality.
+            </p>
+          </div>
+        </aside>
+
+        <div class="video-background2">
+          <video autoplay muted loop id="plant-video">
+            <source src="hangingplants.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <!-- Watering Reminders section -->
+      <section id="watering-reminders">
+        <h2>Watering Reminders</h2>
+        <div id="watering-reminders-container">
+          <div id="form-container">
+            <form id="watering-reminders-form">
+              <label for="plant-name-input">Enter plant name:</label>
+              <input
+                type="text"
+                id="plant-name-input"
+                name="plant-name"
+                placeholder="e.g. Monstera"
+                list="plant-datalist"
+                required
+              />
+
+              <datalist id="plant-datalist"></datalist>
+
+              <div id="watering-reminders-btns">
+                <button type="submit">Add Reminder</button>
+                <button type="button" id="clear-reminders-btn">
+                  Clear Reminders
+                </button>
+                <button type="button" id="sort-reminders-btn">
+                  Sort by Date
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div id="watering-reminders-list"></div>
+        </div>
+      </section>
+
+      <!-- Growth Tracker section -->
+      <aside id="project-c">
+        <h2>Growth Tracker</h2>
+
+        <form id="plant-growth-form">
+          <h3>Track Plant Growth</h3>
+
+          <label for="csv-file"
+            >Please upload your CSV file containing monthly plant data
+          </label>
+          <input
+            type="file"
+            id="csv-file"
+            name="csv-file"
+            accept=".csv"
+            required
+          />
+          <span id="file-error">Please upload a valid CSV file</span>
+          <br />
+
+          <button type="submit" id="submit-button">
+            Visualise Plant Growth
+          </button>
+        </form>
+
+        <div id="legend-container"></div>
+        <canvas id="plant-growth-chart" width="800" height="400"></canvas>
+        <canvas id="initial-chart" width="800" height="400"></canvas>
+        <div id="growth-rates-container"></div>
+
+        <h3>Growth Rate Calculator</h3>
+
+        <form id="growth-rate-form">
+          <label for="plant-name">Plant Name:</label>
+          <input
+            type="text"
+            id="plant-name"
+            name="plant-name"
+            placeholder="e.g. Anthurium"
+            required
+          />
+          <div id="plant-name-error" class="error"></div>
+
+          <label for="start-date">Start Date:</label>
+          <input type="date" id="start-date" name="start-date" required />
+          <div id="start-date-error" class="error"></div>
+
+          <label for="start-leaves">Number of Leaves at Start Date:</label>
+          <input
+            type="number"
+            id="start-leaves"
+            name="start-leaves"
+            placeholder="0"
+            required
+          />
+          <div id="start-leaves-error" class="error"></div>
+
+          <label for="end-date">End Date:</label>
+          <input type="date" id="end-date" name="end-date" required />
+          <div id="end-date-error" class="error"></div>
+
+          <label for="end-leaves">Number of Leaves at End Date:</label>
+          <input
+            type="number"
+            id="end-leaves"
+            name="end-leaves"
+            placeholder="0"
+            required
+          />
+          <div id="end-leaves-error" class="error"></div>
+
+          <div id="growth-rate-form-btns">
+            <button type="submit" id="calculate-button">
+              Calculate Growth Rate
+            </button>
+            <button type="button" id="clear-button">Clear</button>
+          </div>
+        </form>
+
+        <div id="result-container"></div>
+
+        <canvas id="text-animation-canvas" width="800" height="400"></canvas>
+      </aside>
+    </main>
+
+    <footer>
+      <button id="toggle-dark-mode">Toggle Dark Mode</button>
+      <cite
+        >Photo and video credits:
+        <a href="https://www.pexels.com" target="_blank">Pexels</a>,
+        <a href="https://unsplash.com/" target="_blank">Unsplash</a></cite
+      >
+
+      <p><i>Website by Quyen</i></p>
+    </footer>
+  </body>
+</html>
+

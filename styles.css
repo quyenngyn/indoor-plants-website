@@ -1,0 +1,602 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 400 1em;
+}
+
+header {
+  padding-top: 20px;
+  background-color: #103713;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 8px;
+  width: calc(100% - 16px);
+  height: 90px;
+  box-sizing: border-box;
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0 50px;
+  background-color: #103713;
+}
+
+nav a {
+  font: 300 1em;
+  color: white;
+  text-transform: lowercase;
+  text-decoration: none;
+  transition: color 0.4s ease-in-out;
+}
+
+nav a:hover {
+  color: #f9f7dc;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+}
+
+header h1 {
+  font: italic 500 5em "Playfair Display", serif;
+  color: white;
+  text-align: center;
+  letter-spacing: -1px;
+  line-height: 1;
+  padding: 50px 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 3em;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+}
+
+h3 {
+  font: italic 300 2em "Playfair Display", serif;
+  text-align: center;
+}
+
+h4 {
+  font: italic 300 1.5em "Playfair Display", serif;
+  text-align: center;
+}
+
+h5 {
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-top: -10px;
+}
+
+#plant-profiles {
+  box-sizing: border-box;
+  padding: 20px 0;
+  background-color: #e8e4c8;
+}
+
+.plant-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.plant-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.plant-card-img {
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.plant-card h5 ~ ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  text-align: center;
+  line-height: 2.5;
+}
+
+#compare-plants {
+  box-sizing: border-box;
+  padding-top: 1px;
+  padding-bottom: 80px;
+  background-color: #728c5a;
+}
+
+#compare-plants table td:first-child {
+  font-weight: bold;
+}
+
+caption {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: left;
+  margin: auto;
+}
+
+thead {
+  background-color: #f9f9f9;
+}
+
+thead th:first-child {
+  border-top-left-radius: 15px;
+}
+
+thead th:last-child {
+  border-top-right-radius: 15px;
+}
+
+th {
+  padding: 20px 30px;
+}
+
+td {
+  padding: 20px 30px;
+  background-color: #ffffff;
+}
+
+#plant-recommendations {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  padding-top: 1px;
+  padding-bottom: 80px;
+  background-color: #103713;
+}
+
+#plant-recommendations h2 {
+  color: #103713;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-background video,
+#plant-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 35px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+legend {
+  margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  margin-top: 10px;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #728c5a;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.colour-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="color"] {
+  width: 80px;
+  height: 70px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.range-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+button {
+  display: block;
+  width: 50%;
+  margin: 20px auto;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1em;
+  color: white;
+  background-color: #728c5a;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #385723;
+}
+
+#how-to-guides {
+  box-sizing: border-box;
+  padding: 10px 0px 100px 20px;
+  text-align: center;
+  background-color: #385723;
+}
+
+.how-to-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#propagation-guide {
+  padding: 40px 80px;
+  background-color: #f9f7dc;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  max-width: 600px;
+  padding: 30px;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  border: none;
+}
+
+#propagation-guide ol {
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#propagation-guide ol li {
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+ol li::marker {
+  font-weight: bold;
+}
+
+.split-section {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 70vh;
+}
+
+#plant-facts {
+  flex: 1;
+  background-color: #d0d9b3;
+}
+
+.plant-facts-content h3 {
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.plant-facts-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: auto;
+  height: 100%;
+  padding: 0 100px;
+}
+
+.plant-facts-content > p {
+  font-size: 1.1em;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.video-background2 {
+  display: flex;
+  flex: 1;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#watering-reminders {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: #94ab71;
+  text-align: center;
+}
+
+#watering-reminders-btns {
+  display: flex;
+  gap: 15px;
+}
+
+#watering-reminders-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 90%;
+  max-width: 1550px;
+  margin: 0 auto;
+  padding-right: 20px;
+}
+
+#reminders-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 5rem;
+}
+
+#form-container,
+#reminders-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#watering-reminders-form {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: auto;
+}
+
+#watering-reminders-list {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+#watering-reminders-list div {
+  background-color: #fbfae5;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.plant-reminder-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  #watering-reminders-container {
+    grid-template-columns: 1fr;
+  }
+
+  #watering-reminders-form {
+    margin: 0 auto;
+  }
+
+  #watering-reminders-list {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #watering-reminders-list div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #watering-reminders {
+    text-align: center;
+  }
+}
+
+footer {
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  background-color: #103713;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #f9f7dc;
+}
+
+/* Project C */
+#project-c {
+  box-sizing: border-box;
+  padding: 10px 0px 100px 20px;
+  text-align: center;
+  background-color: #385723;
+}
+
+#csv-file {
+  font-family: "Quicksand", sans-serif;
+  border-radius: 5px;
+}
+
+#initial-chart {
+  background-color: #f9f7dc;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+#plant-growth-chart {
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.error {
+  color: rgb(25, 102, 51);
+}
+
+#file-error {
+  color: rgb(25, 102, 51);
+  display: none;
+}
+
+#growth-rate-form-btns {
+  display: flex;
+  gap: 20px;
+}
+
+#legend-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0px;
+  width: 100%;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  justify-content: flex-start;
+  color: white;
+  white-space: nowrap;
+  min-width: 150px;
+  overflow: hidden;
+}
+
+#toggle-dark-mode {
+  width: 18rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+aside {
+  transition: background-color 0.5s;
+}
+
+.dark-mode {
+  background-color: #103713;
+}
+
+#project-c.dark-mode {
+  background-color: #103713;
+  color: white;
+}
+
+form,
+form * {
+  color: black !important;
+}
+
+button {
+  color: white !important;
+}
+
+#growth-rates-container,
+#result-container {
+  font-size: 1.1rem;
+  color: black;
+  line-height: 2rem;
+  max-width: 40rem;
+  margin: 3rem auto;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#growth-rates-container {
+  background-color: #f9f7dc;
+}
+

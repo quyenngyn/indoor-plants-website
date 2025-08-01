@@ -1,0 +1,22 @@
+# Ignore build directories
+/build/
+/dist/
+
+# Ignore system files
+.DS_Store
+
+# Ignore logs and temp files
+*.log
+*.tmp
+
+# Ignore environment variables file
+.env
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore compiled files
+*.min.js
+*.min.css
+
